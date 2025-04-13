@@ -1,33 +1,42 @@
-// Seleciona o elemento com o id "descricao" e armazena em uma variável
+// Seleciona os elementos
 const descricaoDiv = document.getElementById('descricao');
-
-// Seleciona o elemento com o id "myAudio" e armazena em uma variável
 const audio = document.getElementById('myAudio');
+const comprarSection = document.getElementById('comprarSection');
 
-// Adiciona um evento de mouseover ao elemento "descricaoDiv"
+// Flag para controlar se os eventos devem funcionar
+let audioAtivo = false;
+
+// Ao clicar na descrição, ativa os eventos
+descricaoDiv.addEventListener('click', () => {
+    audioAtivo = true;
+});
+
+// Evento mouseover na descrição
 descricaoDiv.addEventListener('mouseover', () => {
-    // Inicia a reprodução do áudio quando o mouse entra no elemento
-    audio.play();
+    if (audioAtivo) {
+        audio.play();
+    }
 });
 
-// Adiciona um evento de mouseleave ao elemento "descricaoDiv"
+// Evento mouseleave na descrição (desativa a flag aqui)
 descricaoDiv.addEventListener('mouseleave', () => {
-    // Pausa a reprodução do áudio quando o mouse sai do elemento
-    audio.pause();
-    // Reseta o tempo de reprodução do áudio para o início
-    audio.currentTime = 0;
+    if (audioAtivo) {
+        audio.pause();
+        audio.currentTime = 0;
+        audioAtivo = false; // agora desativa só ao sair da descrição
+    }
 });
 
-// Adiciona um evento de mouseover ao elemento "comprarSection"
+// Eventos em comprarSection, só funcionam se a flag ainda estiver ativada
 comprarSection.addEventListener('mouseover', () => {
-    // Inicia a reprodução do áudio quando o mouse entra no elemento
-    audio.play();
+    if (audioAtivo) {
+        audio.play();
+    }
 });
 
-// Adiciona um evento de mouseleave ao elemento "comprarSection"
 comprarSection.addEventListener('mouseleave', () => {
-    // Pausa a reprodução do áudio quando o mouse sai do elemento
-    audio.pause();
-    // Reseta o tempo de reprodução do áudio para o início
-    audio.currentTime = 0;
+    if (audioAtivo) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
 });
