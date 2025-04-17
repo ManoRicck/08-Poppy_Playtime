@@ -6,6 +6,6 @@ Este projeto traz uma introdução visual e envolvente ao terceiro capítulo de 
 
 O conteúdo é apresentado em formato de slides, com transições suaves e foco na ambientação, acompanhando imagens e vídeos que mergulham o visitante na atmosfera assustadora e misteriosa de Playtime Co. Cada parte do site foi pensada para evocar o suspense e a curiosidade que são marcas registradas do jogo.
 
-🔗 [Clique aqui para acessar o site e mergulhar no universo de Poppy Playtime 3](https://8-poppy-playtime.vercel.app/)
+👉 [Clique aqui para acessar o site e mergulhar no universo de Poppy Playtime 3](https://8-poppy-playtime.vercel.app/)
 
 Perfeito para fãs de jogos de terror, desenvolvedores interessados em ambientações sombrias e quem curte projetos web com atmosfera imersiva.
