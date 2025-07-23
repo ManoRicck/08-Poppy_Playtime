@@ -51,13 +51,14 @@ hr {
 }
 
 .cabecalho {
-    height: 84px;
+    height: 88px;
     background-color: #0b0b0b;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     border-bottom: 1px solid #282828;
+    position: relative; /* Adicionado para contexto de z-index */
 }
 
 .cabecalho .logo {
