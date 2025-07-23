@@ -519,29 +519,15 @@ section {
 }
 
 .cartao {
-    width: 380px; /* Largura fixa que você já usa para as capas */
+    width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    padding: 30px 20px; /* Reduzi o padding lateral */
+    padding: 30px 20px;
     gap: 30px;
     box-sizing: border-box;
 }
-
-/* Remove completamente qualquer outra definição de .cartao que exista */
-
-/* .cartoes-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.cartao {
-    width: calc(33.33% - 10px);
-    margin-right: 20px;
-} */
-
 
 .compre-ja .informacoes {
     display: flex;
