@@ -477,6 +477,7 @@ section {
 }
 
 .compre-ja .cartao {
+    min-height: 615px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -487,7 +488,40 @@ section {
     gap: 30px;
 }
 
+.cartao .plataforma {
+    min-height: 40px; /* ajuste conforme necessário para o tamanho das logos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.texto-plataforma {
+    display: block;
+    margin-bottom: 0;
+    transition: margin-bottom 1s;
+}
+
+.texto-plataforma.ativo {
+    margin-bottom: 40px; /* ajuste o valor como preferir */
+}
+
 .cartoes-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: center; /* Centraliza os cartões */
+    gap: 30px; /* Espaçamento entre os cartões */
+    max-width: 1200px; /* Limite máximo */
+    margin: 0 auto; /* Centraliza */
+    align-items: flex-start;
+}
+
+.cartao {
+    width: calc(33.33% - 10px);
+    margin-right: 20px;
+}
+
+/* .cartoes-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -496,7 +530,7 @@ section {
 .cartao {
     width: calc(33.33% - 10px);
     margin-right: 20px;
-}
+} */
 
 
 .compre-ja .informacoes {
@@ -566,42 +600,39 @@ section {
     padding: 20px;
 }
 
-.compre-ja .btn-plataforma .plataformas a:nth-child(1) {
+.compre-ja .btn-plataforma .plataformas .plataforma-playstation {
     border: 1px solid #00439c;
     border-radius: 4px;
 }
-
-.compre-ja .btn-plataforma .plataformas a:nth-child(1):hover {
+.compre-ja .btn-plataforma .plataformas .plataforma-playstation:hover {
     background: #00439c;
     transition: all .3s ease-in;
 }
 
-.compre-ja .btn-plataforma .plataformas a:nth-child(2) {
+.compre-ja .btn-plataforma .plataformas .plataforma-xbox {
     border: 1px solid #006105;
     border-radius: 4px;
 }
-
-.compre-ja .btn-plataforma .plataformas a:nth-child(2):hover {
+.compre-ja .btn-plataforma .plataformas .plataforma-xbox:hover {
     background: #006105;
     transition: all .3s ease-in;
 }
 
-.compre-ja .btn-plataforma .plataformas a:nth-child(3) {
+.compre-ja .btn-plataforma .plataformas .plataforma-steam {
     border: 1px solid #00054e;
     border-radius: 4px;
 }
-.compre-ja .btn-plataforma .plataformas a:nth-child(3):hover {
+.compre-ja .btn-plataforma .plataformas .plataforma-steam:hover {
     background: #00054e;
     transition: all .3s ease-in;
 }
 
-.compre-ja .btn-plataforma .plataformas a:nth-child(4) {
+.compre-ja .btn-plataforma .plataformas .plataforma-nintendo {
     border: 1px solid #c20000;
     border-radius: 4px;
 }
-
-.compre-ja .btn-plataforma .plataformas a:nth-child(4):hover {
-    background-color: #c20000;
+.compre-ja .btn-plataforma .plataformas .plataforma-nintendo:hover {
+    background: #c20000;
     transition: all .3s ease-in;
 }
 
