@@ -508,18 +508,27 @@ section {
 
 .cartoes-container {
     display: flex;
-    flex-wrap: wrap; /* Permite quebra de linha */
-    justify-content: center; /* Centraliza os cartões */
-    gap: 30px; /* Espaçamento entre os cartões */
-    max-width: 1200px; /* Limite máximo */
-    margin: 0 auto; /* Centraliza */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1400px; /* Aumentei um pouco para acomodar melhor */
+    margin: 0 auto;
+    padding: 20px;
     align-items: flex-start;
 }
 
 .cartao {
-    width: calc(33.33% - 10px);
-    margin-right: 20px;
+    width: 380px; /* Largura fixa que você já usa para as capas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px 20px; /* Reduzi o padding lateral */
+    gap: 30px;
+    box-sizing: border-box;
 }
+
+/* Remove completamente qualquer outra definição de .cartao que exista */
 
 /* .cartoes-container {
     display: flex;
